@@ -1,1 +1,1 @@
-Yii blog
+Yii framework blog
