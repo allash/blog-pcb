@@ -1,0 +1,708 @@
+2012/11/27 22:17:18 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\yii\framework\base\CComponent.php(264): CWebApplication->__get()
+#5 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__call()
+#6 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->db()
+#7 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:19:04 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\yii\framework\base\CComponent.php(264): CWebApplication->__get()
+#5 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__call()
+#6 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->db()
+#7 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:20:26 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\yii\framework\base\CComponent.php(264): CWebApplication->__get()
+#5 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__call()
+#6 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->db()
+#7 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:26:03 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\yii\framework\base\CComponent.php(264): CWebApplication->__get()
+#5 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__call()
+#6 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->db()
+#7 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:27:01 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\yii\framework\base\CComponent.php(264): CWebApplication->__get()
+#5 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__call()
+#6 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->db()
+#7 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:28:32 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\yii\framework\base\CComponent.php(264): CWebApplication->__get()
+#5 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__call()
+#6 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->db()
+#7 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:29:42 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\yii\framework\base\CComponent.php(264): CWebApplication->__get()
+#5 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__call()
+#6 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->db()
+#7 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:33:17 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\yii\framework\base\CComponent.php(264): CWebApplication->__get()
+#5 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__call()
+#6 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->db()
+#7 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:45:14 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#10 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:51:50 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#10 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:54:19 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#10 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 22:54:59 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#10 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 23:05:21 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#10 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 23:15:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "register".' in Z:\home\localhost\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('register')
+#1 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/register
+---
+2012/11/27 23:16:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in Z:\home\localhost\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
+#1 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/index
+---
+2012/11/27 23:26:45 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#10 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 23:27:30 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#10 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 23:28:14 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#10 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 23:40:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'РЎРёСЃС‚РµРјРµ РЅРµ СѓРґР°Р»РѕСЃСЊ РЅР°Р№С‚Рё Р·Р°РїСЂР°С€РёРІР°РµРјРѕРµ РґРµР№СЃС‚РІРёРµ "gii".' in Z:\home\localhost\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CController.php(271): CController->missingAction('gii')
+#1 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('gii')
+#2 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/gii')
+#3 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php/site/gii
+---
+2012/11/27 23:41:27 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\yii\framework\gii\generators\model\ModelCode.php(57): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 Z:\home\localhost\www\yii\framework\gii\CCodeGenerator.php(154): ModelCode->__construct()
+#7 Z:\home\localhost\www\yii\framework\gii\CCodeGenerator.php(64): ModelGenerator->prepare()
+#8 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): ModelGenerator->actionIndex()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(287): ModelGenerator->runAction()
+#11 Z:\home\localhost\www\yii\framework\web\CController.php(266): ModelGenerator->runActionWithFilters()
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): ModelGenerator->run()
+#13 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/gii/model
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 23:43:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in Z:\home\localhost\www\yii\framework\db\CDbConnection.php:370
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CModule->getComponent('db')
+#4 Z:\home\localhost\www\yii\framework\gii\generators\model\ModelCode.php(57): CModule->__get('db')
+#5 Z:\home\localhost\www\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 Z:\home\localhost\www\yii\framework\gii\CCodeGenerator.php(154): CFormModel->__construct()
+#7 Z:\home\localhost\www\yii\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#13 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php/gii/model
+HTTP_REFERER=http://localhost/blog/index.php/gii
+---
+2012/11/27 23:44:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'РќРµРІРѕР·РјРѕР¶РЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ Р·Р°РїСЂРѕСЃ "gii/model".' in Z:\home\localhost\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/model')
+#1 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/gii/model
+HTTP_REFERER=http://localhost/blog/index.php/gii
+---
+2012/11/27 23:54:07 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было (trying to connect via tcp://mysql2.locum.ru:3306) (Z:\home\localhost\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#4 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(32): CWebApplication->__get()
+#5 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 Z:\home\localhost\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#8 Z:\home\localhost\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#10 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\localhost\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php/site/index
+in Z:\home\localhost\www\blog\protected\controllers\SiteController.php (32)
+in Z:\home\localhost\www\blog\index.php (13)
+2012/11/27 23:54:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in Z:\home\localhost\www\yii\framework\db\CDbConnection.php:370
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(468): CDbConnection->setActive(true)
+#2 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(33): CDbConnection->createCommand(NULL)
+#3 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#8 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#9 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://localhost/blog/index.php/site/index
+---
+2012/11/27 23:54:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in Z:\home\localhost\www\yii\framework\db\CDbConnection.php:370
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(468): CDbConnection->setActive(true)
+#2 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(33): CDbConnection->createCommand(NULL)
+#3 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#8 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#9 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/site/index
+HTTP_REFERER=http://localhost/blog/index.php/site/index
+---
+2012/12/02 02:36:01 [error] [exception.CException] exception 'CException' with message 'РљРѕРЅС‚СЂРѕР»Р»РµСЂ SiteController СЃРѕРґРµСЂР¶РёС‚ РІ СЃРІРѕРµРј РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРё "Z:\home\localhost\www\blog\protected\views\site\register.php" С‚СЌРіРё РІРёРґР¶РµС‚РѕРІ СЃ РЅРµРїСЂР°РІРёР»СЊРЅРѕР№ РІР»РѕР¶РµРЅРЅРѕСЃС‚СЊСЋ. Р’ РІРёРґР¶РµС‚Рµ CActiveForm РЅРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІС‹Р·РѕРІ endWidget().' in Z:\home\localhost\www\yii\framework\web\CBaseController.php:102
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#1 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#2 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(106): CController->render('register', Array)
+#3 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#4 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('register')
+#8 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/register')
+#9 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/site/register
+---
+2012/12/02 02:37:18 [error] [exception.CException] exception 'CException' with message 'РљРѕРЅС‚СЂРѕР»Р»РµСЂ SiteController СЃРѕРґРµСЂР¶РёС‚ РІ СЃРІРѕРµРј РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРё "Z:\home\localhost\www\blog\protected\views\site\register.php" С‚СЌРіРё РІРёРґР¶РµС‚РѕРІ СЃ РЅРµРїСЂР°РІРёР»СЊРЅРѕР№ РІР»РѕР¶РµРЅРЅРѕСЃС‚СЊСЋ. Р’ РІРёРґР¶РµС‚Рµ CActiveForm РЅРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІС‹Р·РѕРІ endWidget().' in Z:\home\localhost\www\yii\framework\web\CBaseController.php:102
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#1 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#2 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(112): CController->render('register', Array)
+#3 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#4 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('register')
+#8 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/register')
+#9 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/site/register
+---
+2012/12/03 01:27:18 [error] [exception.CException] exception 'CException' with message 'РљРѕРЅС‚СЂРѕР»Р»РµСЂ SiteController СЃРѕРґРµСЂР¶РёС‚ РІ СЃРІРѕРµРј РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРё "Z:\home\localhost\www\blog\protected\views\site\register.php" С‚СЌРіРё РІРёРґР¶РµС‚РѕРІ СЃ РЅРµРїСЂР°РІРёР»СЊРЅРѕР№ РІР»РѕР¶РµРЅРЅРѕСЃС‚СЊСЋ. Р’ РІРёРґР¶РµС‚Рµ CActiveForm РЅРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІС‹Р·РѕРІ endWidget().' in Z:\home\localhost\www\yii\framework\web\CBaseController.php:102
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#1 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#2 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(113): CController->render('register', Array)
+#3 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#4 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('register')
+#8 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/register')
+#9 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php/site/register
+---
+2012/12/03 01:29:13 [error] [exception.CException] exception 'CException' with message 'РќРµ РѕРїСЂРµРґРµР»РµРЅРѕ СЃРІРѕР№СЃС‚РІРѕ "CEmailValidator.0".' in Z:\home\localhost\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\validators\CValidator.php(190): CComponent->__set('0', 'required')
+#1 Z:\home\localhost\www\yii\framework\base\CModel.php(285): CValidator::createValidator('email', Object(RegisterForm), 'username, passw...', Array)
+#2 Z:\home\localhost\www\yii\framework\base\CModel.php(259): CModel->createValidators()
+#3 Z:\home\localhost\www\yii\framework\base\CModel.php(302): CModel->getValidators('username')
+#4 Z:\home\localhost\www\yii\framework\web\helpers\CHtml.php(1197): CModel->isAttributeRequired('username')
+#5 Z:\home\localhost\www\yii\framework\web\widgets\CActiveForm.php(563): CHtml::activeLabelEx(Object(RegisterForm), 'username', Array)
+#6 Z:\home\localhost\www\blog\protected\views\site\register.php(25): CActiveForm->labelEx(Object(RegisterForm), 'username')
+#7 Z:\home\localhost\www\yii\framework\web\CBaseController.php(127): require('Z:\home\localho...')
+#8 Z:\home\localhost\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#11 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(113): CController->render('register', Array)
+#12 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#13 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('register')
+#17 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/register')
+#18 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php/site/register
+---
+2012/12/03 01:30:11 [error] [exception.CException] exception 'CException' with message 'РќРµ РѕРїСЂРµРґРµР»РµРЅРѕ СЃРІРѕР№СЃС‚РІРѕ "CEmailValidator.0".' in Z:\home\localhost\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\validators\CValidator.php(190): CComponent->__set('0', 'required')
+#1 Z:\home\localhost\www\yii\framework\base\CModel.php(285): CValidator::createValidator('email', Object(RegisterForm), 'username, passw...', Array)
+#2 Z:\home\localhost\www\yii\framework\base\CModel.php(259): CModel->createValidators()
+#3 Z:\home\localhost\www\yii\framework\base\CModel.php(302): CModel->getValidators('username')
+#4 Z:\home\localhost\www\yii\framework\web\helpers\CHtml.php(1197): CModel->isAttributeRequired('username')
+#5 Z:\home\localhost\www\yii\framework\web\widgets\CActiveForm.php(563): CHtml::activeLabelEx(Object(RegisterForm), 'username', Array)
+#6 Z:\home\localhost\www\blog\protected\views\site\register.php(25): CActiveForm->labelEx(Object(RegisterForm), 'username')
+#7 Z:\home\localhost\www\yii\framework\web\CBaseController.php(127): require('Z:\home\localho...')
+#8 Z:\home\localhost\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#11 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(113): CController->render('register', Array)
+#12 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#13 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('register')
+#17 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/register')
+#18 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php/site/register
+---
+2012/12/03 01:31:52 [error] [exception.CException] exception 'CException' with message 'РќРµ РѕРїСЂРµРґРµР»РµРЅРѕ СЃРІРѕР№СЃС‚РІРѕ "CEmailValidator.0".' in Z:\home\localhost\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\validators\CValidator.php(190): CComponent->__set('0', 'required')
+#1 Z:\home\localhost\www\yii\framework\base\CModel.php(285): CValidator::createValidator('email', Object(RegisterForm), 'username, passw...', Array)
+#2 Z:\home\localhost\www\yii\framework\base\CModel.php(259): CModel->createValidators()
+#3 Z:\home\localhost\www\yii\framework\base\CModel.php(302): CModel->getValidators('username')
+#4 Z:\home\localhost\www\yii\framework\web\helpers\CHtml.php(1197): CModel->isAttributeRequired('username')
+#5 Z:\home\localhost\www\yii\framework\web\widgets\CActiveForm.php(563): CHtml::activeLabelEx(Object(RegisterForm), 'username', Array)
+#6 Z:\home\localhost\www\blog\protected\views\site\register.php(25): CActiveForm->labelEx(Object(RegisterForm), 'username')
+#7 Z:\home\localhost\www\yii\framework\web\CBaseController.php(127): require('Z:\home\localho...')
+#8 Z:\home\localhost\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#11 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(113): CController->render('register', Array)
+#12 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#13 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('register')
+#17 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/register')
+#18 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php/site/register
+---
+2012/12/03 01:38:18 [error] [exception.CException] exception 'CException' with message 'РќРµ РѕРїСЂРµРґРµР»РµРЅРѕ СЃРІРѕР№СЃС‚РІРѕ "CEmailValidator.0".' in Z:\home\localhost\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\validators\CValidator.php(190): CComponent->__set('0', 'required')
+#1 Z:\home\localhost\www\yii\framework\base\CModel.php(285): CValidator::createValidator('email', Object(RegisterForm), 'username, passw...', Array)
+#2 Z:\home\localhost\www\yii\framework\base\CModel.php(259): CModel->createValidators()
+#3 Z:\home\localhost\www\yii\framework\base\CModel.php(302): CModel->getValidators('username')
+#4 Z:\home\localhost\www\yii\framework\web\helpers\CHtml.php(1197): CModel->isAttributeRequired('username')
+#5 Z:\home\localhost\www\yii\framework\web\widgets\CActiveForm.php(563): CHtml::activeLabelEx(Object(RegisterForm), 'username', Array)
+#6 Z:\home\localhost\www\blog\protected\views\site\register.php(25): CActiveForm->labelEx(Object(RegisterForm), 'username')
+#7 Z:\home\localhost\www\yii\framework\web\CBaseController.php(127): require('Z:\home\localho...')
+#8 Z:\home\localhost\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#11 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(111): CController->render('register', Array)
+#12 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#13 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('register')
+#17 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/register')
+#18 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php/site/register
+---
+2012/12/03 01:41:11 [error] [exception.CException] exception 'CException' with message 'РќРµ РѕРїСЂРµРґРµР»РµРЅРѕ СЃРІРѕР№СЃС‚РІРѕ "CEmailValidator.0".' in Z:\home\localhost\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\validators\CValidator.php(190): CComponent->__set('0', 'required')
+#1 Z:\home\localhost\www\yii\framework\base\CModel.php(285): CValidator::createValidator('email', Object(RegisterForm), 'username, passw...', Array)
+#2 Z:\home\localhost\www\yii\framework\base\CModel.php(259): CModel->createValidators()
+#3 Z:\home\localhost\www\yii\framework\base\CModel.php(302): CModel->getValidators('username')
+#4 Z:\home\localhost\www\yii\framework\web\helpers\CHtml.php(1197): CModel->isAttributeRequired('username')
+#5 Z:\home\localhost\www\yii\framework\web\widgets\CActiveForm.php(563): CHtml::activeLabelEx(Object(RegisterForm), 'username', Array)
+#6 Z:\home\localhost\www\blog\protected\views\site\register.php(25): CActiveForm->labelEx(Object(RegisterForm), 'username')
+#7 Z:\home\localhost\www\yii\framework\web\CBaseController.php(127): require('Z:\home\localho...')
+#8 Z:\home\localhost\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#11 Z:\home\localhost\www\blog\protected\controllers\SiteController.php(111): CController->render('register', Array)
+#12 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#13 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('register')
+#17 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/register')
+#18 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/index.php/site/register
+HTTP_REFERER=http://localhost/blog/index.php/site/register
+---
+2012/12/03 20:48:13 [error] [exception.CException] exception 'CException' with message 'РљРѕРЅС‚СЂРѕР»Р»РµСЂ UserController РЅРµ РјРѕР¶РµС‚ РЅР°Р№С‚Рё РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ "users_list".' in Z:\home\localhost\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('users_list', Array, true)
+#1 Z:\home\localhost\www\blog\protected\controllers\UserController.php(18): CController->render('users_list', Array)
+#2 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#3 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#7 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user')
+#8 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/blog/index.php/user
+---
+2012/12/03 20:49:45 [error] [exception.CException] exception 'CException' with message 'РљРѕРЅС‚СЂРѕР»Р»РµСЂ UserController РЅРµ РјРѕР¶РµС‚ РЅР°Р№С‚Рё РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ "form_signup".' in Z:\home\localhost\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CController.php(783): CController->renderPartial('form_signup', Array, true)
+#1 Z:\home\localhost\www\blog\protected\controllers\UserController.php(46): CController->render('form_signup', Array)
+#2 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionSignup()
+#3 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/signup')
+#8 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/blog/index.php/user/signup
+HTTP_REFERER=http://localhost/blog/index.php/user
+---
+2012/12/03 21:36:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'РќРµРІРѕР·РјРѕР¶РЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ Р·Р°РїСЂРѕСЃ "usuer".' in Z:\home\localhost\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuer')
+#1 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/usuer
+---
+2012/12/03 21:36:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'РќРµРІРѕР·РјРѕР¶РЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ Р·Р°РїСЂРѕСЃ "usuer".' in Z:\home\localhost\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuer')
+#1 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/usuer
+---
+2012/12/03 21:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'РќРµРІРѕР·РјРѕР¶РЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ Р·Р°РїСЂРѕСЃ "users".' in Z:\home\localhost\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users')
+#1 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/users
+---
+2012/12/03 22:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'РќРµРІРѕР·РјРѕР¶РЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ Р·Р°РїСЂРѕСЃ "suer".' in Z:\home\localhost\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('suer')
+#1 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/suer
+---
+2012/12/03 22:21:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'РќРµРІРѕР·РјРѕР¶РЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ Р·Р°РїСЂРѕСЃ "suer".' in Z:\home\localhost\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('suer')
+#1 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/suer
+---
+2012/12/03 23:02:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'blo'' in Z:\home\localhost\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\localhost\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 Z:\home\localhost\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\localhost\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 Z:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 Z:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 Z:\home\localhost\www\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#7 Z:\home\localhost\www\blog\protected\models\User.php(19): CActiveRecord::model('User')
+#8 Z:\home\localhost\www\blog\protected\controllers\UserController.php(15): User::model()
+#9 Z:\home\localhost\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#10 Z:\home\localhost\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 Z:\home\localhost\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 Z:\home\localhost\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#14 Z:\home\localhost\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user')
+#15 Z:\home\localhost\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 Z:\home\localhost\www\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php/user
+---
