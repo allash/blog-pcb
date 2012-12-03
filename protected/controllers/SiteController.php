@@ -29,6 +29,7 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
+        Yii::app()->db;
 		$this->render('index');
 	}
 
@@ -97,6 +98,18 @@ class SiteController extends Controller
 		// display the login form
 		$this->render('login',array('model'=>$model));
 	}
+
+    public function actionRegister()
+    {
+        $model = new RegisterForm();
+
+        if(isset($_POST['ajax']) && $_POST['ajax'] === 'register-form')
+        {
+            Yii::app()->end();
+        }
+
+        $this->render('register', array('model' => $model));
+    }
 
 	/**
 	 * Logs out the current user and redirect to homepage.
