@@ -1,7 +1,7 @@
 <h1>Зарегистрированные пользователи</h1>
 
 <?php foreach($users as $user): ?>
-Логин: <?php echo $user->login; ?>
+<p>Логин:</p> <?php echo $user->login; ?>
 E-mail: <?php echo $user->email; ?>
 Дата регистрации: <?php echo date('d.m.Y H:i', $user->dtime_registration); ?><br />
 <?php endforeach; ?>
