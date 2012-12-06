@@ -6,6 +6,7 @@
  * Time: 20:42
  * To change this template use File | Settings | File Templates.
  */
+
 class User extends CActiveRecord
 {
     // Сценарий регистрации
@@ -62,7 +63,7 @@ class User extends CActiveRecord
             'login' => 'Логин',
             'password' => 'Пароль',
             'password_repeat' => 'Повторите пароль',
-            'email' => 'e-mail',
+            'email' => 'А-mail',
         );
     }
 

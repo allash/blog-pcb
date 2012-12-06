@@ -101,14 +101,29 @@ class SiteController extends Controller
 
     public function actionRegister()
     {
-        $model = new RegisterForm();
+        // Создать модель и указать ей, что используется сценарий регистрации
+        $user = new User(User::SCENARIO_SIGNUP);
 
-        if(isset($_POST['ajax']) && $_POST['ajax'] === 'register-form')
+        // Если пришли данные для сохранения
+        if(isset($_POST['User']))
         {
-            Yii::app()->end();
+            // Безопасное присваивание значений атрибутам
+            $user->attributes = $_POST['User'];
+
+            // Проверка данных
+            if($user->validate())
+            {
+                // Сохранить полученные данные
+                // false нужен для того, чтобы не производить повторную проверку
+                $user->save(false);
+
+                // Перенаправить на список зарегестрированных пользователей
+                $this->redirect($this->createUrl('user/'));
+            }
         }
 
-        $this->render('register', array('model' => $model));
+        // Вывести форму
+        $this->render('register', array('form'=>$user));
     }
 
 	/**

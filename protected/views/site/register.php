@@ -12,42 +12,34 @@ $this->breadcrumbs=array(
 
 <h1>Регистрация</h1>
 <div class="form">
+    <?php echo CHtml::beginForm(); ?>
 
-    <?php $form=$this->beginWidget('CActiveForm', array(
-    'id'=>'register-form',
-    'enableClientValidation'=>true,
-    'clientOptions'=>array(
-        'validateOnSubmit'=>true,
-    ),
-)); ?>
+    <?php echo CHtml::errorSummary($form)?>
 
     <div class="row">
-        <?php echo $form->labelEx($model,'username'); ?>
-        <?php echo $form->textField($model,'username'); ?>
-        <?php echo $form->error($model,'username'); ?>
+        <?php echo CHtml::activeLabel($form,'login')?>*:
+        <?php echo CHtml::activeTextField($form,'login'); ?>
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model,'email'); ?>
-        <?php echo $form->textField($model,'email'); ?>
-        <?php echo $form->error($model,'email'); ?>
+        <?php echo CHtml::activeLabel($form,'Еmail'); ?>*:
+        <?php echo CHtml::activeTextField($form,'email') ?>
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model,'password'); ?>
-        <?php echo $form->passwordField($model,'password'); ?>
-        <?php echo $form->error($model,'password'); ?>
+        <?php echo CHtml::activeLabel($form,'password'); ?>*:
+        <?php echo CHtml::activePasswordField($form,'password'); ?>
     </div>
+
     <div class="row">
-        <?php echo $form->labelEx($model,'Подтвердить пароль'); ?>
-        <?php echo $form->passwordField($model,'password'); ?>
-        <?php echo $form->error($model,'password'); ?>
+        <?php echo CHtml::activeLabel($form,'password_repeat'); ?>*:
+        <?php echo CHtml::activePasswordField($form,'password_repeat'); ?>
     </div>
 
-    <div class="row buttons">
-    <?php echo CHtml::submitButton('Register'); ?>
-</div>
 
+    <div class="row submit">
+        <?php echo CHtml::submitButton('Зарегистрироваться'); ?>
+    </div>
 
-    <?php $this->endWidget(); ?>
+    <?php echo CHtml::endForm(); ?>
 </div>
