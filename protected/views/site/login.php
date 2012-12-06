@@ -19,7 +19,7 @@ $this->breadcrumbs=array(
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
 	),
-)); ?>
+)); ?> 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Логин'); ?>
 		<?php echo $form->textField($model,'username'); ?>
