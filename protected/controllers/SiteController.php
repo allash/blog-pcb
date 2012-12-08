@@ -118,7 +118,7 @@ class SiteController extends Controller
                 $user->save(false);
 
                 // Перенаправить на список зарегестрированных пользователей
-                $this->redirect($this->createUrl('user/'));
+                $this->redirect($this->createUrl('site/'));
             }
         }
 

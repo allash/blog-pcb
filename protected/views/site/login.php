@@ -5,11 +5,11 @@
 
 $this->pageTitle=Yii::app()->name . ' - Login';
 $this->breadcrumbs=array(
-	'Login',
+	'Войти',
 );
 ?>
 
-<h1>Login</h1>
+<h1>Войти</h1>
 
 
 <div class="form">
@@ -19,7 +19,7 @@ $this->breadcrumbs=array(
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
 	),
-)); ?> 
+)); ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'Логин'); ?>
 		<?php echo $form->textField($model,'username'); ?>

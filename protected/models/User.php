@@ -63,7 +63,7 @@ class User extends CActiveRecord
             'login' => 'Логин',
             'password' => 'Пароль',
             'password_repeat' => 'Повторите пароль',
-            'email' => 'А-mail',
+            'email' => 'E-mail',
         );
     }
 
