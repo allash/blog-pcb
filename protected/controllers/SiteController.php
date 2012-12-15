@@ -112,7 +112,7 @@ class SiteController extends Controller
 
             // Проверка данных
             if($user->validate())
-            {
+            { 
                 //$model->val
                 $user->save(false);
                 $this->redirect($this->createUrl('site/'));
