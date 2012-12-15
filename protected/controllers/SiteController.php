@@ -103,7 +103,7 @@ class SiteController extends Controller
     {
         // Создать модель и указать ей, что используется сценарий регистрации
         $user = new User(User::SCENARIO_SIGNUP);
-
+        $model = new LoginForm();
         // Если пришли данные для сохранения
         if(isset($_POST['User']))
         {
@@ -113,11 +113,8 @@ class SiteController extends Controller
             // Проверка данных
             if($user->validate())
             {
-                // Сохранить полученные данные
-                // false нужен для того, чтобы не производить повторную проверку
+                //$model->val
                 $user->save(false);
-
-                // Перенаправить на список зарегестрированных пользователей
                 $this->redirect($this->createUrl('site/'));
             }
         }
@@ -125,6 +122,12 @@ class SiteController extends Controller
         // Вывести форму
         $this->render('register', array('form'=>$user));
     }
+
+    public function auth()
+    {
+        $model = new LoginForm();
+    }
+
 
 	/**
 	 * Logs out the current user and redirect to homepage.
