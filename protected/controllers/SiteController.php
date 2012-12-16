@@ -27,11 +27,34 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-        Yii::app()->db;
-		$this->render('index');
+        $criteria = new CDbCriteria();
+
+        $count=Article::model()->count($criteria);
+
+        $pages=new CPagination($count);
+
+        // элементов на страницу
+        $pages->pageSize=2;
+        $pages->applyLimit($criteria);
+
+        $models = Article::model()->findAll($criteria);
+
+        $this->render('index', array(
+            'models' => $models,
+            'pages' => $pages
+        ));
+
 	}
+
+    public function actionArticle()
+    {
+        if(isset($_GET['id']))
+        {
+            $article = Article::model()->findByPk($_GET['id']);
+            $this->render('article', array('article' => $article));
+        }
+
+    }
 
 	/**
 	 * This is the action to handle external exceptions.
@@ -103,7 +126,7 @@ class SiteController extends Controller
     {
         // Создать модель и указать ей, что используется сценарий регистрации
         $user = new User(User::SCENARIO_SIGNUP);
-        $model = new LoginForm();
+
         // Если пришли данные для сохранения
         if(isset($_POST['User']))
         {
@@ -112,8 +135,8 @@ class SiteController extends Controller
 
             // Проверка данных
             if($user->validate())
-            { 
-                //$model->val
+            {
+
                 $user->save(false);
                 $this->redirect($this->createUrl('site/'));
             }
@@ -122,12 +145,6 @@ class SiteController extends Controller
         // Вывести форму
         $this->render('register', array('form'=>$user));
     }
-
-    public function auth()
-    {
-        $model = new LoginForm();
-    }
-
 
 	/**
 	 * Logs out the current user and redirect to homepage.
