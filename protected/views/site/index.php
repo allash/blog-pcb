@@ -3,6 +3,17 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
+<?php  if(!Yii::app()->user->isGuest) :
+    echo CHtml::link("Написать статью", array("article/"));
+endif; ?><br /><br />
+<?foreach($models as $model):?>
+<h3><?php echo $model->title;?></h3>
+<p><?php echo (strlen($model->article) > 300) ? substr($model->article, 0, 300) . "..." : $model->article;?></p>
+   <?php echo CHtml::link("Читать далее...", array('site/article', 'id'=>$model->id)); ?> <br /><br />
+<?endforeach?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+
+<?$this->widget('CLinkPager', array(
+    'pages' => $pages,
+))?>
 
