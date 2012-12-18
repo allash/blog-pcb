@@ -138,6 +138,9 @@ class SiteController extends Controller
             {
 
                 $user->save(false);
+                $identity=new UserIdentity($_POST['User']['email'], $_POST['User']['password']);
+                $identity->authenticate();
+                Yii::app()->user->login($identity);
                 $this->redirect($this->createUrl('site/'));
             }
         }
