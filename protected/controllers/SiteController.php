@@ -27,14 +27,15 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-        $criteria = new CDbCriteria();
 
+        $criteria = new CDbCriteria();
+        $criteria->order = 'id DESC';
         $count=Article::model()->count($criteria);
 
         $pages=new CPagination($count);
 
         // элементов на страницу
-        $pages->pageSize=2;
+        $pages->pageSize=7;
         $pages->applyLimit($criteria);
 
         $models = Article::model()->findAll($criteria);

@@ -32,7 +32,7 @@
 		<?php echo $form->textField($model,'date'); ?>
 		<?php echo $form->error($model,'date'); ?>
 	</div>
-
+<?php echo "->" . Yii::app()->user->name; ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'author'); ?>
 		<?php echo $form->textField($model,'author',array('size'=>60,'maxlength'=>255)); ?>
