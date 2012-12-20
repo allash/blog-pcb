@@ -23,7 +23,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<div id="logo">Простой бложик</div>
         <div id="login">
             <?php
             $this->widget('zii.widgets.CMenu', array(

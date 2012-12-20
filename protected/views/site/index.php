@@ -15,14 +15,15 @@ $this->widget('zii.widgets.jui.CJuiButton', array(
 ));
 endif; ?><br /><br />
 
-<?foreach($models as $model):?>
+<?php foreach($models as $model):?>
+
 <h3><?php echo $model->title;?></h3>
 <p><?php echo (strlen($model->article) > 300) ? substr($model->article, 0, 300) . "..." : $model->article;?></p>
    <?php echo CHtml::link("Читать далее...", array('site/article', 'id'=>$model->id)); ?> <br /><br />
-<?endforeach?>
+<?php endforeach; ?>
 
 
-<?$this->widget('CLinkPager', array(
+<?php $this->widget('CLinkPager', array(
     'pages' => $pages,
-))?>
+));?>
 
