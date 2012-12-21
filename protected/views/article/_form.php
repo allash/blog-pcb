@@ -28,6 +28,19 @@
 	</div>
 
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'date'); ?>
+		<?php echo $form->textField($model,'date'); ?>
+		<?php echo $form->error($model,'date'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'author'); ?>
+		<?php echo $form->textField($model ,'author',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'author'); ?>
+	</div>
+
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
