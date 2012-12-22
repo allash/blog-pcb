@@ -124,7 +124,8 @@ class ArticleController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Article');
+		$dataProvider=new CActiveDataProvider('Article', array(
+            'criteria'=>array('order'=>'id DESC')));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
