@@ -64,10 +64,10 @@ class Article extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'article' => 'Article',
-			'date' => 'Date',
-			'author' => 'Author',
+			'title' => 'Название статьи',
+			'article' => 'Статья',
+			'date' => 'Дата',
+			'author' => 'Автор',
 		);
 	}
 
