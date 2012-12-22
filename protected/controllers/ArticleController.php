@@ -70,10 +70,13 @@ class ArticleController extends Controller
 		if(isset($_POST['Article']))
 		{
 			$attributes = $_POST['Article'];
-			$attributes['author'] = Yii::app()->user->name;			
-			$model->attributes=$attributes;
+            $attributes['author'] = Yii::app()->user->name;
+
+            $model->attributes=$attributes;
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            {
+                $this->redirect(array('view','id'=>$model->id));
+            }
 		}
 
 		$this->render('create',array(
@@ -181,4 +184,6 @@ class ArticleController extends Controller
                 $this->render('error', $error);
         }
     }
+
+
 }
