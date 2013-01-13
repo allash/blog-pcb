@@ -24,6 +24,7 @@ class UserIdentity extends CUserIdentity
         }
         else
         {
+
             $this->_id=$record->pk_user;
             $this->errorCode=self::ERROR_NONE;
         }
@@ -34,4 +35,5 @@ class UserIdentity extends CUserIdentity
     {
         return $this->_id;
     }
+
 }
