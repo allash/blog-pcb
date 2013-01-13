@@ -81,7 +81,11 @@ class Article extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
+		
+		if (Yii::app()->user->role !== 'admin' && !Yii::app()->user->isAdmin()) {
+			$criteria->addColumnCondition(array('author'=>Yii::app()->user->name));
+		}
+		
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('article',$this->article,true);
