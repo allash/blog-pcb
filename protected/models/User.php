@@ -78,6 +78,8 @@ class User extends CActiveRecord
                 $this->dtime_registration = time();
                 // Хешировать пароль
                 $this->password = $this->hashPassword($this->password);
+                $this->activation = $this->hashActivationKey();
+                $this->activation_status = 0;
             }
 
             return true;
@@ -90,4 +92,15 @@ class User extends CActiveRecord
     {
         return md5($password);
     }
+
+    public function hashActivationKey()
+    {
+        return sha1(mt_rand(10000, 99999).time().$this->email);
+    }
+
+    public function activateAccount()
+    {
+        $this->activation_status = 1;
+    }
+
 }

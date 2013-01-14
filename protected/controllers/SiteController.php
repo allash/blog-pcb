@@ -1,5 +1,6 @@
 <?php
 
+
 class SiteController extends Controller
 {
 	/**
@@ -46,6 +47,17 @@ class SiteController extends Controller
         ));
 
 	}
+
+    public function actionViewTest() {
+
+        // Render view and get content
+        // Notice the last argument being `true` on render()
+        $content = $this->render('viewTest', array(
+            'Test' => 'TestText 123',
+        ), true);
+
+
+    }
 
     public function actionArticle()
     {
@@ -136,17 +148,56 @@ class SiteController extends Controller
             // Проверка данных
             if($user->validate())
             {
-
                 $user->save(false);
-                $identity=new UserIdentity($_POST['User']['email'], $_POST['User']['password']);
+                /*$identity=new UserIdentity($_POST['User']['email'], $_POST['User']['password']);
                 $identity->authenticate();
-                Yii::app()->user->login($identity);
-                $this->redirect($this->createUrl('site/'));
+                Yii::app()->user->login($identity);*/
+                $model = User::model()->find('email=:email', array(':email'=>$_POST['User']['email']));
+                $message = "<html><body>Please click this below to activate your membership<br />".
+                    Yii::app()->createAbsoluteUrl('site/activate', array('email' => $_POST['User']['email'])).'&pass='.$_POST['User']['password'].'&key='.$model->activation ."
+                </body></html>";
+
+                Mailer::newMail($_POST['User']['email'], "Registration Confirmation", $message);
+                $this->redirect($this->createUrl('site/MailSent'));
             }
         }
 
         // Вывести форму
         $this->render('register', array('form'=>$user));
+    }
+
+    public function actionActivate()
+    {
+        if (isset($_GET['email']) && preg_match('/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/', $_GET['email']))
+        {
+            $email = $_GET['email'];
+            $model = User::model()->find('email=:email', array(':email'=>$email));
+        }
+
+        if(isset($_GET['pass']))
+        {
+            if (isset($_GET['key']))
+            {
+                $key = $_GET['key'];
+
+                if($model->activation == $key)
+                {
+                    $model->activateAccount();
+                    $model->save(false);
+
+                    $identity=new UserIdentity($_GET['email'], $_GET['pass']);
+                    $identity->authenticate();
+                    Yii::app()->user->login($identity);
+                    $this->redirect($this->createUrl('site/'));
+                }
+            }
+        }
+
+    }
+
+    public function actionMailSent()
+    {
+        $this->render('mailsent');
     }
 
 	/**

@@ -36,7 +36,6 @@ $this->breadcrumbs=array(
         <?php echo CHtml::activePasswordField($form,'password_repeat'); ?>
     </div>
 
-
     <div class="row submit">
         <?php echo CHtml::submitButton('Зарегистрироваться'); ?>
     </div>

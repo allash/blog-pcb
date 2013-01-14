@@ -14,8 +14,29 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/swfobject.js"></script>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
+    <script>
+        var flashvars = {
+        };
+        var params = {
+            menu: "false",
+            scale: "noScale",
+            allowFullscreen: "true",
+            allowScriptAccess: "always",
+            bgcolor: "",
+            wmode: "direct" // can cause issues with FP settings & webcam
+        };
+        var attributes = {
+            id:"TestClientServer"
+        };
+        swfobject.embedSWF(
+                "<?php echo Yii::app()->request->baseUrl; ?>/game/TestClientServer.swf",
+                "altContent", "100%", "500px", "10.0.0",
+                "expressInstall.swf",
+                flashvars, params, attributes);
+    </script>
 </head>
 
 <body>
@@ -44,6 +65,7 @@
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
+                array('label'=>'Play!', 'url'=>array('/site/game')),
 			),
 		)); ?>
 	</div><!-- mainmenu -->

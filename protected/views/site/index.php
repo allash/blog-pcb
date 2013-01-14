@@ -3,7 +3,6 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-
 <?php  if(!Yii::app()->user->isGuest) :
 $this->widget('zii.widgets.jui.CJuiButton', array(
 'buttonType'=>'link',
@@ -26,4 +25,5 @@ endif; ?><br /><br />
 <?php $this->widget('CLinkPager', array(
     'pages' => $pages,
 ));?>
+
 
