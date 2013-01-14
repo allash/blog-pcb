@@ -24,8 +24,28 @@ class ArticleController extends Controller
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
+
+
+
+
 	public function accessRules()
 	{
+/*		$connection=Yii::app()->db;
+			
+	    $sql="SELECT * FROM `user` WHERE role = 'admin'";
+	    
+	    $command=$connection->createCommand($sql);
+	    
+	    $dataReader=$connection->createCommand($sql)->query();
+	    
+	    $rows=$dataReader->readAll();
+
+	    $admin = array();
+	    
+	    foreach ($rows as $name) {
+	       $admin[] = $name['email'];
+	    }*/
+
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
@@ -37,7 +57,7 @@ class ArticleController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=> array('*'),//$admin,
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -51,6 +71,9 @@ class ArticleController extends Controller
 	 */
 	public function actionView($id)
 	{
+
+
+
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -127,7 +150,8 @@ class ArticleController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Article');
+		$dataProvider=new CActiveDataProvider('Article', array(
+            'criteria'=>array('order'=>'id DESC')));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -165,14 +189,7 @@ class ArticleController extends Controller
 	 * Performs the AJAX validation.
 	 * @param CModel the model to be validated
 	 */
-	protected function performAjaxValidation($model)
-	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='article-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-	}
+
 
     public function actionError()
     {
