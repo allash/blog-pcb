@@ -149,9 +149,6 @@ class SiteController extends Controller
             if($user->validate())
             {
                 $user->save(false);
-                /*$identity=new UserIdentity($_POST['User']['email'], $_POST['User']['password']);
-                $identity->authenticate();
-                Yii::app()->user->login($identity);*/
                 $model = User::model()->find('email=:email', array(':email'=>$_POST['User']['email']));
                 $message = "<html><body>Please click this below to activate your membership<br />".
                     Yii::app()->createAbsoluteUrl('site/activate', array('email' => $_POST['User']['email'])).'&pass='.$_POST['User']['password'].'&key='.$model->activation ."
