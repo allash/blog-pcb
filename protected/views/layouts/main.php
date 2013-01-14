@@ -44,7 +44,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo">Простой бложик</div>
+		<div id="logo">Блог</div>
         <div id="login">
             <?php
             $this->widget('zii.widgets.CMenu', array(
@@ -63,9 +63,16 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
+<<<<<<< HEAD
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
                 array('label'=>'Play!', 'url'=>array('/site/game')),
+=======
+				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'), 'visible'=>!Yii::app()->user->isAdmin()),
+				array('label'=>'Contact', 'url'=>array('/site/contact'), 'visible'=>!Yii::app()->user->isAdmin()),
+                array('label'=>'Управление пользователями', 'url'=>array('/user'),'visible'=>Yii::app()->user->isRoot()),
+                array('label'=>'Управление статьями', 'url'=>array('/article/admin'), 'visible'=>!Yii::app()->user->isGuest)
+>>>>>>> d75c9696454ac08173344fe71c3bc32336bfbfa5
 			),
 		)); ?>
 	</div><!-- mainmenu -->
@@ -78,6 +85,7 @@
 
 
 	<?php echo $content; ?>
+
 
 	<div class="clear"></div>
 

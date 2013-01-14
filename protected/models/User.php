@@ -22,7 +22,7 @@ class User extends CActiveRecord
 
     public function tableName()
     {
-        return 'user';
+        return 'user'; 
     }
 
     // Правила проверки входящих данных
@@ -30,7 +30,9 @@ class User extends CActiveRecord
     {
         return array(
             // Логин и пароль - обязательные поля
-            array('login, password', 'required'),
+            array('login, password,', 'required'),
+            
+            array('role', 'safe'),
             // Длина логина должна быть в пределах от 5 до 30 символов
             array('login', 'length', 'min'=>5, 'max'=>30),
             // Логин должен соответствовать шаблону
@@ -38,7 +40,7 @@ class User extends CActiveRecord
             // Логин должен быть уникальным
             array('login', 'unique'),
             // Длина пароля не менее 6 символов
-            array('password', 'length', 'min'=>6, 'max'=>30),
+            array('password', 'length', 'min'=>6, 'max'=>30, 'on'=>self::SCENARIO_SIGNUP),
             // Повторный пароль и почта обязательны для сценария регистрации
             array('password_repeat, email', 'required', 'on'=>self::SCENARIO_SIGNUP),
             // Длина повторного пароля не менее 6 символов
@@ -64,6 +66,7 @@ class User extends CActiveRecord
             'password' => 'Пароль',
             'password_repeat' => 'Повторите пароль',
             'email' => 'E-mail',
+            'role' => 'Роль',
         );
     }
 
@@ -93,6 +96,7 @@ class User extends CActiveRecord
         return md5($password);
     }
 
+
     public function hashActivationKey()
     {
         return sha1(mt_rand(10000, 99999).time().$this->email);
@@ -101,6 +105,31 @@ class User extends CActiveRecord
     public function activateAccount()
     {
         $this->activation_status = 1;
+    }
+
+
+
+    public function search()
+    {
+        // Warning: Please modify the following code to remove attributes that
+        // should not be searched.
+
+        $criteria=new CDbCriteria;
+        
+/*        if (Yii::app()->user->role !== 'admin') {
+            $criteria->addColumnCondition(array('author'=>Yii::app()->user->name));
+        }*/
+        
+   /*     $criteria->compare('pk_user',$this->id);*/
+/*        $criteria->compare('dtime_registration',$this->title,true);
+        $criteria->compare('login',$this->article,true);
+        $criteria->compare('password',$this->date,true);
+        $criteria->compare('email',$this->author,true);
+        $criteria->compare('role',$this->author,true);*/
+
+        return new CActiveDataProvider($this, array(
+            'criteria'=>$criteria,
+        ));
     }
 
 }
